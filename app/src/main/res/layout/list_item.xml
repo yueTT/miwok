@@ -3,25 +3,48 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools = "http://schemas.android.com/tools"
     android:id="@+id/list_item"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/miwok_text"
-        tools:text="lutti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@color/light_yellow"
+        android:id="@+id/list_item_image" />
 
-    <TextView
-        android:id="@+id/default_text"
-        tools:text="one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/list_item_word_background"
+        android:layout_width="match_parent"
+        android:layout_height="88dp">
+
+        <TextView
+            android:id="@+id/miwok_text"
+            tools:text="lutti"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/default_text"
+            tools:text="one"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            />
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
